@@ -1,5 +1,5 @@
 import streamlit as st
-from auth.login import show_login
+from pages.auth.login import show_login
 
 def main():
 
