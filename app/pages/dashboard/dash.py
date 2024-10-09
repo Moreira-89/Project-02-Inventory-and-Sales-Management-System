@@ -17,6 +17,6 @@ def show_dash():
         st.button("Relatorios")
 
         if st.button("Sair"):
-            st.success("Até a próxima!")
             st.session_state.authenticated = False
+            st.success("Até a próxima!")
             st.rerun()
