@@ -1,5 +1,6 @@
 import streamlit as st
 from pages.authentication.login import show_login
+from pages.dashboard.dash import show_dash
 
 def main():
 
@@ -12,13 +13,7 @@ def main():
         show_login()
 
     else:
-        
-        st.title("Página Principal")
-        st.write("Bem-vindo ao dashboard!")
-       
-        if st.button("Sair"):
-            st.session_state.authenticated = False
-            st.rerun()
+        show_dash()
 
 if __name__ == "__main__":
     main()
