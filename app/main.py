@@ -1,6 +1,7 @@
 import streamlit as st
 from pages.authentication.login import show_login
-from pages.dashboard.dash import show_dash
+from pages.dashboard.dash_overview import show_dash
+
 
 def main():
 
