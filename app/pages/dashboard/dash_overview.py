@@ -9,6 +9,8 @@ def show_dash():
     st.title("Página Principal")
     st.write("Bem-vindo ao dashboard!")
     
+    
+    """
     with st.sidebar:
 
         st.button("Clientes")
@@ -20,3 +22,4 @@ def show_dash():
             st.session_state.authenticated = False
             st.success("Até a próxima!")
             st.rerun()
+    """
