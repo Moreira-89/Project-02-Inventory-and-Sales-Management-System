@@ -1,4 +1,4 @@
-import streamlit as st
+import streamlit as st#type: ignore
 from pages.authentication.login import show_login
 from pages.dashboard.dash_overview import show_dash
 from pages.reports.reports_overview import show_reports
