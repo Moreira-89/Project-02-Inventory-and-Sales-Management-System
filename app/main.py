@@ -4,6 +4,7 @@ from pages.dashboard.dash_overview import show_dash
 from pages.reports.reports_overview import show_reports
 from pages.customers.clients_overview import show_clients
 from pages.inventory.inv_overview import show_inventory
+from pages.orders.order_overview import show_orders
 
 def main():
 
@@ -33,6 +34,9 @@ def main():
         if st.sidebar.button("Estoque", icon=":material/inventory:"):
             page = "Estoque"
 
+        if st.sidebar.button("Pedidos", icon=":material/orders:"):
+            page = "Pedidos"
+
         if st.sidebar.button("Relatórios", icon=":material/assessment:"):
             page = "Relatórios"
 
@@ -47,6 +51,9 @@ def main():
 
             case "Estoque":
                 show_inventory()# Exibe a pagina do estoque
+
+            case "Pedidos":
+                show_orders()# Exibe a pagina de pedidos
             
             case "Relatórios":
                 show_reports()# Exibe a pagina de relatório
