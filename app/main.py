@@ -24,16 +24,16 @@ def main():
         page = "Inicio" # Página inicial padrão
 
         # Botões de navegação na barra lateral
-        if st.sidebar.button("Inicio"):
+        if st.sidebar.button("Inicio", icon=":material/home:"):
             page = "Inicio"
         
-        if st.sidebar.button("Clientes"):
+        if st.sidebar.button("Clientes", icon=":material/people:"):
             page = "Clientes"
         
-        if st.sidebar.button("Estoque"):
+        if st.sidebar.button("Estoque", icon=":material/inventory:"):
             page = "Estoque"
 
-        if st.sidebar.button("Relatórios"):
+        if st.sidebar.button("Relatórios", icon=":material/assessment:"):
             page = "Relatórios"
 
         # Navegação baseada na página selecionada
@@ -52,7 +52,7 @@ def main():
                 show_reports()# Exibe a pagina de relatório
         
         # Botão de logout
-        if st.sidebar.button("Sair"):
+        if st.sidebar.button("Sair", icon=":material/logout:"):
             st.session_state.authenticated = False# Atualiza o estado de autenticação
             st.rerun()# Reinicia a aplicação
 

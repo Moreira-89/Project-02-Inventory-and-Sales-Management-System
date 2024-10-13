@@ -25,7 +25,7 @@ def show_login():
             username = st.text_input("Nome de Usuário", "")
             password = st.text_input("Senha", "", type="password")
 
-            if st.button("Login"):
+            if st.button("Login", icon=":material/login:"):
 
                 if check_credentials(username, password):
 
