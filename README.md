@@ -13,7 +13,7 @@ Este projeto visa desenvolver um sistema de gestão de estoque e vendas para uma
 
 - `app/`: Diretório principal que contém toda a lógica da aplicação.
     - `main.py`: Arquivo de entrada principal da aplicação.
-    - `pages/`: Diretório que organiza todas as páginas do projeto. Contém subdiretórios específicos para cada parte do sistema, como `dashboard`, `reports`, `customers`, `inventory`, e `authentication`.
+    - `pages/`: Diretório que organiza todas as páginas do projeto. Contém subdiretórios específicos para cada parte do sistema, como `dashboard`, `reports`, `customers`, `inventory`, `orders`, e `authentication`.
     - `utils/`: Contém funções auxiliares, como autenticação e carregamento de dados.
 
 - `assets/`: Diretório que armazena arquivos estáticos (imagens, CSVs, e outros tipos de arquivos que podem ser usados na aplicação).
