@@ -18,7 +18,7 @@ def show_login():
         col1, col2 = st.columns(2)
 
         with col1:
-            st.image("assets\images\img_login.png")
+            st.image("assets/images/img_login.png")
 
         with col2:
             st.title("Bem Vindo!")
