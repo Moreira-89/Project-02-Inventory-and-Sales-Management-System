@@ -6,4 +6,4 @@ def show_clients():
 
     st.title("Clientes")
     
-    st.title("oLA")
+    a = st.text_input("Escreva aqui")
