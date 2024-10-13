@@ -24,6 +24,11 @@ Este projeto visa desenvolver um sistema de gestão de estoque e vendas para uma
 
 - [Streamlit](https://streamlit.io/) - Framework para aplicações web em Python
 - [Pandas](https://pandas.pydata.org/) - Biblioteca para análise de dados
-- [NumPy](https://numpy.org/) - Biblioteca para computação numérica
+- [NumPy](https://numpy.org/) - Biblioteca para computação numérica <br>
 
+Para instalar todas as bibliotecas na versão corretas que o projeto utiliza é só colocar o seguinte código no terminal da sua IDE: 
+
+```python
+pip install -r requirements.txt
+```
 
