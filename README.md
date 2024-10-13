@@ -2,6 +2,8 @@
 
 Este projeto visa desenvolver um sistema de gestão de estoque e vendas para uma oficina mecânica. O objetivo principal é otimizar a organização do estoque, garantir a disponibilidade de peças e melhorar a eficiência no atendimento ao cliente. O sistema incluirá funcionalidades para gerenciamento de contas, clientes, produtos e pedidos. <br>
 
+Para acessar o sistema basta clicar >> [aqui](https://sistema-gerenciamento-estoque-vendas.streamlit.app/) <<
+
 ### Funcionalidades
 
 - __Gestão de Contas:__ Controle de usuários e permissões para acesso ao sistema.
