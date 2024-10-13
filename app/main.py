@@ -11,18 +11,19 @@ def main():
     if "authenticated" not in st.session_state:
         st.session_state.authenticated = False
         
-    # Tela de login
+    # Verifica se o usuário está autenticado
     if not st.session_state.authenticated:
-        show_login()
+        show_login()# Exibe a tela de login
 
     else: 
 
-        st.sidebar.title("Aonde vamos?")
+        st.sidebar.title("Aonde vamos?")# Título da barra lateral
 
         st.sidebar.markdown(" ")
 
-        page = "Inicio"
+        page = "Inicio" # Página inicial padrão
 
+        # Botões de navegação na barra lateral
         if st.sidebar.button("Inicio"):
             page = "Inicio"
         
@@ -35,23 +36,25 @@ def main():
         if st.sidebar.button("Relatórios"):
             page = "Relatórios"
 
+        # Navegação baseada na página selecionada
         match page:
 
             case "Inicio":
-                show_dash()
+                show_dash()# Exibe o dashboard
             
             case "Clientes":
-                show_clients()
+                show_clients()# Exibe a pagina de cliente
 
             case "Estoque":
-                show_inventory()
+                show_inventory()# Exibe a pagina do estoque
             
             case "Relatórios":
-                show_reports()
+                show_reports()# Exibe a pagina de relatório
         
+        # Botão de logout
         if st.sidebar.button("Sair"):
-            st.session_state.authenticated = False
-            st.rerun()
+            st.session_state.authenticated = False# Atualiza o estado de autenticação
+            st.rerun()# Reinicia a aplicação
 
 if __name__ == "__main__":
     main()
