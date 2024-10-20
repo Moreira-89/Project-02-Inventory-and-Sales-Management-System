@@ -13,7 +13,7 @@ def check_credentials(input_username, input_password):
 def show_login():
 
     # Tela de Login
-    if not st.session_state.authenticated:
+    if not st.session_state.get("authenticated", False):
 
         col1, col2 = st.columns(2)
 
