@@ -1,0 +1,21 @@
+﻿codigo;produto;quantidade;valor;categoria
+p001;oleo de motor 5w30;50;50.00;lubrificantes
+p002;filtro de oleo;30;15.00;filtros
+p003;bateria 60ah;10;300.00;baterias
+p004;pastilhas de freio (dianteiras);25;80.00;freios
+p005;velas de ignicao;40;20.00;ignicao
+p006;disco de freio (traseiro);15;120.00;freios
+p007;correia dentada;12;180.00;transmissao
+p008;limpa para-brisa;20;10.00;acessorios
+p009;fluido de arrefecimento;35;30.00;fluidos
+p010;bujia de pre-aquecimento;8;45.00;ignicao
+p011;filtro de ar;20;12.00;filtros
+p012;oleo de cambio automatico;15;80.00;lubrificantes
+p013;bomba d'agua;8;250.00;motor
+p014;rolamento de roda;30;50.00;suspensao
+p015;amortecedor (dianteiro);10;150.00;suspensao
+p016;fluido de freio;25;20.00;freios
+p017;correia de acessorios;12;40.00;transmissao
+p018;bujia de incandescencia;5;35.00;ignicao
+p019;sensor de oxigenio;7;100.00;eletronica
+p020;lampada farol;50;5.00;iluminacao
