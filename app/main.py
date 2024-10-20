@@ -45,6 +45,7 @@ def main():
             case "Relatórios":
                 show_reports()# Exibe a pagina de relatório
         
+        st.sidebar.markdown("---")
         # Botão de logout
         if st.sidebar.button("Sair", icon=":material/logout:"):
             st.session_state.authenticated = False# Atualiza o estado de autenticação
