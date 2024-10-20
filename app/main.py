@@ -22,27 +22,31 @@ def main():
 
         st.sidebar.markdown(" ")
 
-        page = st.sidebar.radio(
-            "Navegação",
-            ("Inicio", "Clientes", "Estoque", "Pedidos", "Relatórios")
+        page = st.sidebar.radio("",
+
+            (":house: Inicio", 
+            ":busts_in_silhouette: Clientes", 
+            ":package: Estoque", 
+            ":shopping_trolley: Pedidos", 
+            ":bar_chart: Relatórios")
         )
 
         # Navegação baseada na página selecionada
         match page:
 
-            case "Inicio":
+            case ":house: Inicio":
                 show_dash()# Exibe o dashboard
             
-            case "Clientes":
+            case ":busts_in_silhouette: Clientes":
                 show_clients()# Exibe a pagina de cliente
 
-            case "Estoque":
+            case ":package: Estoque":
                 show_inventory()# Exibe a pagina do estoque
 
-            case "Pedidos":
+            case ":shopping_trolley: Pedidos":
                 show_orders()# Exibe a pagina de pedidos
             
-            case "Relatórios":
+            case ":bar_chart: Relatórios":
                 show_reports()# Exibe a pagina de relatório
         
         st.sidebar.markdown("---")
