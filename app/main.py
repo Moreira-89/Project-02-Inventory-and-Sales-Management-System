@@ -22,23 +22,10 @@ def main():
 
         st.sidebar.markdown(" ")
 
-        page = "Inicio" # Página inicial padrão
-
-        # Botões de navegação na barra lateral
-        if st.sidebar.button("Inicio", icon=":material/home:"):
-            page = "Inicio"
-        
-        if st.sidebar.button("Clientes", icon=":material/people:"):
-            page = "Clientes"
-        
-        if st.sidebar.button("Estoque", icon=":material/inventory:"):
-            page = "Estoque"
-
-        if st.sidebar.button("Pedidos", icon=":material/orders:"):
-            page = "Pedidos"
-
-        if st.sidebar.button("Relatórios", icon=":material/assessment:"):
-            page = "Relatórios"
+        page = st.sidebar.radio(
+            "Navegação",
+            ("Inicio", "Clientes", "Estoque", "Pedidos", "Relatórios")
+        )
 
         # Navegação baseada na página selecionada
         match page:
