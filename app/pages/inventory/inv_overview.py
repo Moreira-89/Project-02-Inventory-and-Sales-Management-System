@@ -26,7 +26,7 @@ def show_inventory():
         # Realiza a filtragem dos dados com tratamento de erro
         else:
             try:
-                df_filtered = df[df.apply(lambda row: row.astype(str).str.contains(search, case=False).any(), axis=1)]
+                df_filtered = df[df.apply(lambda row: row.astype(str).str.contains(search_input, case=False).any(), axis=1)]
                 st.table(df_filtered)
 
             except Exception as e:
