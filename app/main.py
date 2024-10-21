@@ -9,11 +9,6 @@ from pages.orders.order_overview import show_orders
 
 def main():
 
-    # ---> Importacao dos dados
-    try:
-        data = pd.read_csv(r"assets\data\data_inventory.csv", sep=";")
-    except FileNotFoundError:
-        st.error("Impossivel encontrar os dados!")
 
     # Armazena o estado de autenticação
     if "authenticated" not in st.session_state:
@@ -48,7 +43,7 @@ def main():
                 show_clients()# Exibe a pagina de cliente
 
             case ":package: Estoque":
-                show_inventory(data=data)# Exibe a pagina do estoque
+                show_inventory()# Exibe a pagina do estoque
 
             case ":shopping_trolley: Pedidos":
                 show_orders()# Exibe a pagina de pedidos

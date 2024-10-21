@@ -2,10 +2,15 @@ import streamlit as st
 import pandas as pd
 
 
-def show_inventory(data):
+def show_inventory():
 
     st.title("Estoque")
 
+# ---> Importacao dos dados
+    try:
+        data = pd.read_csv(r"assets\data\data_inventory.csv", sep=";")
+    except FileNotFoundError:
+        st.error("Impossivel encontrar os dados!")
 
 # ---> Campo para realizar a pesquisa
     search_input = st.text_input(label="Pesquisar produto (nome, código, etc.)",
