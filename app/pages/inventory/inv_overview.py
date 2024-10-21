@@ -2,15 +2,9 @@ import streamlit as st
 import pandas as pd
 
 
-def show_inventory():
+def show_inventory(data):
 
     st.title("Estoque")
-
-# ---> Importacao dos dados
-    try:
-        df = pd.read_csv(r"assets\data\data_inventory.csv", sep=";")
-    except FileNotFoundError:
-        st.error("Impossivel encontrar os dados!")
 
 
 # ---> Campo para realizar a pesquisa
@@ -73,12 +67,12 @@ def show_inventory():
             # Realiza a filtragem dos dados com tratamento de erro
             else:
                 try:
-                    df_filtered = df[df.apply(lambda row: row.astype(str).str.contains(search_input, case=False).any(), axis=1)]
-                    st.table(df_filtered)
+                    data_filtered = data[data.apply(lambda row: row.astype(str).str.contains(search_input, case=False).any(), axis=1)]
+                    st.table(data_filtered)
 
                 except Exception as e:
                     st.error(f"Ocorreu um erro durante a filtragem: {e}")
 
         # Exibi a tabela mesmo sem o filtro
         else:
-            st.table(df)
+            st.table(data)
