@@ -8,9 +8,10 @@ def show_inventory():
 
 # ---> Importacao dos dados
     try:
-        data = pd.read_csv(r"assets\data\data_inventory.csv", sep=";")
+        data = pd.read_csv("assets\data\data_inventory.csv", sep=";")
     except FileNotFoundError:
         st.error("Impossivel encontrar os dados!")
+        return
 
 # ---> Campo para realizar a pesquisa
     search_input = st.text_input(label="Pesquisar produto (nome, código, etc.)",
