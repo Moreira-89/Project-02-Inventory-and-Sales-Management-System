@@ -15,8 +15,7 @@ Para acessar o sistema basta clicar >> [aqui](https://sistema-gerenciamento-esto
 
 - `app/`: Diretório principal que contém toda a lógica da aplicação.
     - `main.py`: Arquivo de entrada principal da aplicação.
-    - `pages/`: Diretório que organiza todas as páginas do projeto. Contém subdiretórios específicos para cada parte do sistema, como `dashboard`, `reports`, `customers`, `inventory`, `orders`, e `authentication`.
-    - `utils/`: Contém funções auxiliares, como autenticação e carregamento de dados.
+    - `pages/`: Diretório que organiza todas as páginas do projeto, como: `dashboard`, `reports`, `customers`, `inventory`, `orders`, e `authentication`.
 
 - `assets/`: Diretório que armazena arquivos estáticos (imagens, CSVs, e outros tipos de arquivos que podem ser usados na aplicação).
 - `.streamlit/`: Configurações do Streamlit, como o arquivo `config.toml`, que controla aspectos visuais (tema, layout) e de comportamento do aplicativo.

@@ -1,4 +1,5 @@
-# .streamlit/config.toml
+[client]
+showSidebarNavigation = false
 
 [theme]
 primaryColor = "#FF4B4B"
