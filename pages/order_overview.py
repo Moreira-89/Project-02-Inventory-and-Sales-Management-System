@@ -1,4 +1,4 @@
-import streamlit as st
+import streamlit as st #type: ignore
 
 st.set_page_config(layout="wide")
 
@@ -9,3 +9,4 @@ st.sidebar.page_link("app.py", label="Voltar para inicio", icon=":material/home:
 
 
 st.title("Pedidos")
+
