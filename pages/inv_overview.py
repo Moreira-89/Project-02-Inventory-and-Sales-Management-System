@@ -35,17 +35,13 @@ search_input = st.text_input(label="Pesquisar produto (nome, código, etc.)",
 @st.dialog("Formulário de Cadastro")
 def register():
 
-    product_name = st.text_input(label="Nome do produto:",
-                        placeholder="Insira o nome do produto")
+    product_name = st.text_input(label="Nome do produto:", placeholder="Insira o nome do produto")
     
-    quantity_product = st.text_input(label="Quantiadade do produto:",
-                        placeholder="Insira a quantidade do produto")
+    quantity_product = st.number_input(label="Quantidade do produto:", min_value=1, placeholder="Insira a quantidade")
 
-    product_value = st.text_input(label="Valor do produto:",
-                        placeholder="Insira o valor do produto")
+    product_value = st.number_input(label="Valor do produto:", min_value=0.01, format="%.2f", placeholder="Insira o valor")
 
-    product_code = st.text_input(label="Codigo do produto:",
-                        placeholder="Insira o codigo do produto")
+    product_code = st.text_input(label="Código do produto:", placeholder="Insira o código do produto")
 
     if st.button("Cadastrar"):
 
