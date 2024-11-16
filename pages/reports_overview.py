@@ -15,7 +15,7 @@ st.sidebar.page_link("app.py", label="Voltar para inicio", icon=":material/home:
 st.title("Relatórios")
 
 # ---> Importacao dos dados
-file_path = "assets\data\data_reports.csv"
+file_path = "assets/data/data_reports.csv"
 
 if os.path.exists(file_path):
     try:
