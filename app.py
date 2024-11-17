@@ -9,8 +9,14 @@ def main():
     # Verifica se o usuário está autenticado
     if st.session_state.authenticated:
 
-        st.title("Página Principal")
-        st.write("Bem-vindo ao dashboard!") 
+        st.set_page_config(layout="wide")
+
+        st.sidebar.image("assets/images/user_photo.png")
+
+        st.sidebar.write("Nome: Mauricio")
+        st.sidebar.write("Cargo: Administrador") 
+
+        st.sidebar.markdown("---")
 
         st.sidebar.title("Navegação")
         st.sidebar.page_link("pages/clients_overview.py", label="Clientes", icon=":material/person:")
@@ -24,6 +30,11 @@ def main():
         if st.sidebar.button("Sair", icon=":material/logout:"):
             st.session_state.authenticated = False
             st.rerun()
+
+        st.title("Página Principal")
+        st.write("Bem-vindo ao dashboard!") 
+        
+
     else:
         show_login()
 
