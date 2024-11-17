@@ -4,6 +4,13 @@ import os
 
 st.set_page_config(layout="wide")
 
+st.sidebar.image("assets/images/user_photo.png")
+
+st.sidebar.write("Nome: Mauricio")
+st.sidebar.write("Cargo: Administrador") 
+
+st.sidebar.markdown("---")
+
 st.sidebar.title("Navegação")
 st.sidebar.page_link("pages/clients_overview.py", label="Clientes", icon=":material/person:")
 st.sidebar.page_link("pages/order_overview.py", label="Pedidos", icon=":material/orders:")
